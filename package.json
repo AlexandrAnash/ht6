@@ -1,0 +1,27 @@
+{
+  "name": "ht6",
+  "version": "1.0.0",
+  "description": "infrastructure",
+  "main": "server",
+  "scripts": {
+    "start": "node ./",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexandrAnash/ht6.git"
+  },
+  "author": "AlexandrAnash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexandrAnash/ht6/issues"
+  },
+  "homepage": "https://github.com/AlexandrAnash/ht6#readme",
+  "devDependencies": {
+    "eslint": "^3.2.2"
+  },
+  "dependencies": {
+    "cool-ascii-faces": "^1.3.4",
+    "express": "^4.14.0"
+  }
+}
