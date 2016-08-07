@@ -20,7 +20,7 @@ app.listen(app.get('port'), function() {
     console.log('Cool faces on port', app.get('port'));
 });
 
-app.get('/db', function (request, response) {
+app.get('/getTestData', function (request, response) {
     pg.connect(process.env.DATABASE_URL, function(err, client, done) {
         if (err) {
             console.log('err = ', err);
@@ -29,11 +29,12 @@ app.get('/db', function (request, response) {
             done();
             if (err)
             { 
-                console.error(err); response.send('Error ' + err); 
+                console.error(err); 
+                response.send('Error ' + err);
             }
             else
             {
-                response.render('pages/db', {results: result.rows} );
+                response.join({data: result.rows} );
             }
         });
     });

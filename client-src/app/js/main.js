@@ -6,6 +6,17 @@ function addItem() {
     const item = renderItem(Math.random(10000));
     items.innerHTML += item;
 }
+function getData() {
+    fetch('/getTestData').then((res) => {
+        const itemDataHtml = renderData(res.json());
+        document.querySelector('.items').innerHTML = itemDataHtml; 
+    });
+}
+function renderData(data) {
+    return `<div class="data__item">
+                ${data}
+            </div>`;
+}
 function renderItem(name) {
     return `<div class="item">
                 ${name}
@@ -24,5 +35,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
             addItem();
         });
     });
-
+    actionControls.querySelectorAll('.btn-warn').forEach((element) => {
+        element.addEventListener('click', (event) => {
+            getData();
+        });
+    });
 });
