@@ -5,7 +5,7 @@
   "main": "server",
   "scripts": {
     "start": "node ./",
-    "lint": "eslint ."
+    "test-eslint": "eslint ."
   },
   "repository": {
     "type": "git",
