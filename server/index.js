@@ -3,6 +3,10 @@
  * @file
  * Сервер приложения. Основан на примере для Heroku
  */
+// TODO:
+// - добавить логирование 
+// - доработать client часть
+// TODO: - добавит тесты 
 const express = require('express');
 const path = require('path');
 const app = express();
