@@ -2,7 +2,7 @@ module.exports = function(config) {
     config.set({
         frameworks: ['jasmine'],
         browsers: ['PhantomJS'],
-        singleRun: false,
+        singleRun: true,
         
         preprocessors: {
             'server/test/**/*Test.js': ['webpack'],
