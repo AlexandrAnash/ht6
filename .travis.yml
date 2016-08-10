@@ -5,6 +5,7 @@ install:
 - npm install
 script:
 - npm run test-eslint
+- npm run test-karma
 deploy:
   provider: heroku
   api_key:
