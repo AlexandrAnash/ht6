@@ -1,8 +1,4 @@
 'use strict';
-const TaskModel = require('./TaskModel').TaskModel; 
-
-/// models 
-
 /**
  * @file
  * Сервер приложения. Основан на примере для Heroku
@@ -12,6 +8,7 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const app = express();
 const pg = require('pg');
+const TaskModel = require('./TaskModel').TaskModel; 
 
 const listData = [
     new TaskModel(0,1,2),
