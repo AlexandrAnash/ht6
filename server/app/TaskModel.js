@@ -1,5 +1,5 @@
-import {TaskFactory} from './TaskFactory';
-export class TaskModel {
+const TaskFactory = require('./TaskFactory').TaskFactory;
+class TaskModel {
     constructor(red, green, blue) {
         if (TaskFactory.isCorrect([red, green, blue]) === false ) {
             throw new Error(`no valid input data: red = ${red}, green = ${green}, blue = ${blue}`);
@@ -9,3 +9,4 @@ export class TaskModel {
         this.blue = blue;
     }
 } 
+module.exports.TaskModel = TaskModel;
