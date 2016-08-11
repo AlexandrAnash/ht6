@@ -1,4 +1,4 @@
-import {TaskFactory} from '../app/TaskFactory';
+import {TaskFactory} from '../app/taskFactory';
 
 describe('Test task factory', function() {
     it('should be true if uniq items array', function() {

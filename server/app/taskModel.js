@@ -1,4 +1,4 @@
-import {TaskFactory} from './TaskFactory';
+import {TaskFactory} from './taskFactory';
 export class TaskModel {
     constructor(red, green, blue) {
         if (TaskFactory.isCorrect([red, green, blue]) === false ) {

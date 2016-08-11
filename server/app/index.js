@@ -1,5 +1,5 @@
 'use strict';
-import {TaskModel} from './TaskModel';
+import {TaskModel} from './taskModel';
 /**
  * @file
  * Сервер приложения. Основан на примере для Heroku
