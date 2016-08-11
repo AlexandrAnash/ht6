@@ -1,5 +1,5 @@
-import {TaskModel} from '../app/taskModel';
-import {TaskFactory} from '../app/taskFactory';
+import {TaskModel} from '../app/TaskModel';
+import {TaskFactory} from '../app/TaskFactory';
 
 describe('Test task model', function() {
     it('should be right a constructor', function() {

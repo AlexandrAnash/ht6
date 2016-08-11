@@ -1,5 +1,35 @@
 'use strict';
-import {TaskModel} from './taskModel';
+
+
+/// models 
+class TaskModel {
+    constructor(red, green, blue) {
+        if (TaskFactory.isCorrect([red, green, blue]) === false ) {
+            throw new Error(`no valid input data: red = ${red}, green = ${green}, blue = ${blue}`);
+        }
+        this.red = red;
+        this.green = green;
+        this.blue = blue;
+    }
+} 
+
+class TaskFactory {
+    static isCorrect(listData) {
+        let result = true;
+        listData.forEach((i, ki) => {
+            if (result === false) return true;
+            listData.forEach((j, kj) => {
+                if (ki === kj) return;
+                if (i === j) {
+                    result = false;
+                }
+                if (result === false) return true;
+            });
+        });
+        return result;
+    }
+}
+
 /**
  * @file
  * Сервер приложения. Основан на примере для Heroku
