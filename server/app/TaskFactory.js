@@ -1,4 +1,4 @@
-export class TaskFactory {
+class TaskFactory {
     static isCorrect(listData) {
         let result = true;
         listData.forEach((i, ki) => {
@@ -14,3 +14,4 @@ export class TaskFactory {
         return result;
     }
 }
+module.exports.TaskFactory = TaskFactory;

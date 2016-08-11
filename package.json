@@ -4,7 +4,7 @@
   "description": "infrastructure",
   "main": "server/app",
   "scripts": {
-    "start": "babel-node ./",
+    "start": "node ./",
     "test-eslint": "eslint .",
     "test-karma": "karma start"
   },

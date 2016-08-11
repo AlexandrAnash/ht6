@@ -1,4 +1,4 @@
-import {TaskModel} from '../app/taskModel';
+const TaskModel = require('./../app/taskModel').TaskModel;
 
 describe('Test task model', function() {
     it('should be right a constructor', function() {

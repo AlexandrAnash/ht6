@@ -1,4 +1,4 @@
-import {TaskFactory} from '../app/TaskFactory';
+const TaskFactory = require('./../app/TaskFactory').TaskFactory;
 
 describe('Test task factory', function() {
     it('should be true if uniq items array', function() {
