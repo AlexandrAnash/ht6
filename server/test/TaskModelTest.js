@@ -1,4 +1,4 @@
-const TaskModel = require('./../app/taskModel').TaskModel;
+const TaskModel = require('./../app/TaskModel').TaskModel;
 
 describe('Test task model', function() {
     it('should be right a constructor', function() {
